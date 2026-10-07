@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-300">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center">
+    <section class=" bg-white w-2/7 h-4/6 mx-auto mb-12 p-12 rounded-lg ">
+        <div class=" flex flex-col justify-center  ">
+            <img class="size-30 mx-auto mb-8" src="./assets/github-logo.png" alt="">
+            <h1 class="font-bold text-3xl text-center">GitHub Issues Tracker</h1>
+            <p class=" text-gray-600 text-center">Sign in to manage your issues</p>
+        </div>
+
+        <div class="flex-col items-centermx-auto gap-10" >
+            <fieldset class="fieldset mx-auto">
+                <legend  class="fieldset-legend text-lg ">Username</legend>
+                <input id="Username" type="text" class="input w-full" placeholder="    Enter Username" />
+                <p class="label text-blue-700">Default: admin</p>
+            </fieldset>
+
+            <fieldset class="fieldset mx-auto">
+                <legend  class="fieldset-legend text-lg ">Password</legend>
+                <input id="Password" type="text" class="input w-full" placeholder="     Enter Password" />
+                <p class="label text-blue-700">Default: admin123</p>
+            </fieldset>
+
+            <button onclick="singin()"  class="btn btn-primary w-full ">Sign In</button>
+
+            <div class="divider text-gray-500 text-sm">OR</div>
+
+
+            <div class="gap-10">
+                <p class="text-center text-gray-600">Demo Credentials:</p>
+                
+                <div class="bg-gray-100 rounded-xl p-6">
+
+                    <p class="text-center text-gray-600"><span class="text-black">Username:</span> admin</p>
+                    <p class="text-center text-gray-600"><span class="text-black">Password:</span> admin123</p>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
